@@ -19,7 +19,8 @@
          {:entries [{{name}}.core]}}
 
         :devtools
-        {
+        ;; before live-reloading any code call this function
+        {:before-load {{name}}.core/stop
          ;; after live-reloading finishes call this function
          :after-load {{name}}.core/start
          ;; serve the public directory over http at port 8700
