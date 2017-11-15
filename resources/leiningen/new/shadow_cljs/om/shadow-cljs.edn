@@ -3,7 +3,6 @@
  ["src"]
 
  :dependencies [[binaryage/devtools "0.9.7"]
-                [thheller/shadow-cljsjs "0.0.3"]
                 ;; fork to support react 16
                 [com.tiensonqin/om "1.0.0-beta2-SNAPSHOT"]]
 
