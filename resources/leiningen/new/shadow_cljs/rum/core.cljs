@@ -1,8 +1,6 @@
 (ns {{name}}.core
   (:require [rum.core :as rum]))
 
-(enable-console-print!)
-
 (defonce app-state (atom {:text "Hello world!"}))
 
 (rum/defc hello-world []

@@ -3,7 +3,6 @@
  ["src"]
 
  :dependencies [[binaryage/devtools "0.9.7"]
-                [thheller/shadow-cljsjs "0.0.3"]
                 ;; fork to support react 16
                 [ua.modnakasta/rum "0.11.0-2"]
                 [org.roman01la/citrus "3.0.0" :exclusions [rum]]]
