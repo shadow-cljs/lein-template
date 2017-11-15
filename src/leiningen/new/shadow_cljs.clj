@@ -26,8 +26,7 @@
         data {:name name
               :sanitized (name-to-path name)}]
     (->>
-     [["deps.cljs" (raw "deps.cljs")]
-      ["package.json" (raw "package.json")]
+     [["package.json" (raw "package.json")]
       ["README.md" (raw "README.md")]
       ["public/index.html" (render "index.html" data)]
       ["public/css/style.css" (raw "style.css")]
