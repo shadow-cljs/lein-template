@@ -1,9 +1,26 @@
 ;; shadow-cljs configuration
-{:source-paths
+{
+ {{#native}}
+ :source-paths
  ["src"]
-
- :dependencies [[binaryage/devtools "0.9.7"]
-                [reagent "0.8.0-alpha2"]]
+ :dependencies [[binaryage/devtools "0.9.10"]
+                {{#om}}
+                [com.tiensonqin/om "1.0.0-beta2-SNAPSHOT"]
+                {{/om}}
+                {{#rum}}
+                [ua.modnakasta/rum "0.11.0-2"]
+                [org.roman01la/citrus "3.0.0" :exclusions [rum]]
+                {{/rum}}
+                {{#reagent}}
+                [reagent "0.8.0-alpha2"]
+                {{/reagent}}]
+ {{/native}}
+ {{#depsedn}}
+ :deps true
+ {{/depsedn}}
+ {{#lein}}
+ :lein true
+ {{/lein}}
 
  ;; set an nrepl port for connection to a REPL.
  :nrepl        {:port 8777}
@@ -25,5 +42,4 @@
          ;; serve the public directory over http at port 8700
          :http-root    "public"
          :http-port    8700
-         :preloads     [devtools.preload]}
-        }}}
+         :preloads     [devtools.preload]}}}}

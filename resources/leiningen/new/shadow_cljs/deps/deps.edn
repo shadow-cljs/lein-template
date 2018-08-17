@@ -1,0 +1,19 @@
+{:deps {
+        binaryage/devtools {:mvn/version "0.9.10"}
+        thheller/shadow-cljs {:mvn/version "2.5.1"}
+        {{#om}}
+        com.tiensonqin/om {:mvn/version "1.0.0-beta2-SNAPSHOT"}
+        {{/om}}
+        {{#rum}}
+        ua.modnakasta/rum {:mvn/version "0.11.0-2"}
+        org.roman01la/citrus {:mvn/version "3.0.0" :exclusions [rum]}
+        {{/rum}}
+        {{#reagent}}
+        reagent {:mvn/version "0.8.0-alpha2"}
+        {{/reagent}}}
+
+ :source-paths
+ ["src"]
+
+ :aliases {:outdated {:extra-deps {olical/depot {:mvn/version "1.2.0"}}
+                      :main-opts ["-m" "depot.outdated.main"]}}}
