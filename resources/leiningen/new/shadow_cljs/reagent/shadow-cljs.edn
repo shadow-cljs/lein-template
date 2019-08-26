@@ -2,8 +2,8 @@
 {:source-paths
  ["src"]
 
- :dependencies [[binaryage/devtools "0.9.7"]
-                [reagent "0.8.0-alpha2"]]
+ :dependencies [[binaryage/devtools "0.9.10"]
+                [reagent "0.8.1"]]
 
  ;; set an nrepl port for connection to a REPL.
  :nrepl        {:port 8777}
