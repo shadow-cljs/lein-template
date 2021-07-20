@@ -1,9 +1,10 @@
 (ns {{name}}.core
-  (:require [reagent.core :as reagent :refer [atom]]))
+  (:require [reagent.core :as r]
+            [reagent.dom  :as rdom]))
 
 ;; define your app data so that it doesn't get over-written on reload
 
-(defonce app-state (atom {:text "Hello world!"}))
+(defonce app-state (r/atom {:text "Hello world!"}))
 
 (defn hello-world []
   [:div
@@ -11,8 +12,8 @@
    [:h3 "Edit this and watch it change!"]])
 
 (defn start []
-  (reagent/render-component [hello-world]
-                            (. js/document (getElementById "app"))))
+  (rdom/render [hello-world]
+               (. js/document (getElementById "app"))))
 
 (defn ^:export init []
   ;; init is called ONCE when the page loads
