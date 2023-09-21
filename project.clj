@@ -1,4 +1,4 @@
-(defproject shadow-cljs/lein-template "0.1.3"
+(defproject shadow-cljs/lein-template "0.1.4"
   :description "Shadow-cljs template."
   :url "https://github.com/tiensonqin/shadow-cljs-template"
   :license {:name "Eclipse Public License"
