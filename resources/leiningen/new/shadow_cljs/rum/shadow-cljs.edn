@@ -2,7 +2,7 @@
 {:source-paths
  ["src"]
 
- :dependencies [[binaryage/devtools "0.9.7"]
+ :dependencies [[binaryage/devtools "1.0.7"]
                 ;; fork to support react 16
                 [ua.modnakasta/rum "0.11.0-2"]
                 [org.roman01la/citrus "3.0.0" :exclusions [rum]]]
